@@ -10,15 +10,24 @@ app.use(express.urlencoded({ extended: true }));
 // 2: Session codlari
 
 // 3: Views codlari
-app.set("wiews", "wiews");
-app.set("wiew engine", "ejs");
+app.set("views", "views");
+app.set("view engine", "ejs");
 
 // 4: Routing codlari
-app.get("/hello", function (req, res) {
-  res.end(`<h1 style="backgournd: red">Hello World<h1>`);
+// app.get("/", function (req, res) {
+//   res.end(`<h1 style="backgournd: red">Hello World<h1>`);
+// });
+// app.get("/gift", function (req, res) {
+//   res.end(`<h1 style="backgournd: red">Siz sovgalar bolimidasiz<h1>`);
+// });
+
+app.post("/create-item", (req, res) => {
+  console.log(req.body);
+  res.json({ test: "succes" });
 });
-app.get("/gift", function (req, res) {
-  res.end(`<h1 style="backgournd: red">Siz sovgalar bolimidasiz<h1>`);
+
+app.get("/", function (req, res) {
+  res.render(`harid`);
 });
 
 const server = http.createServer(app);
