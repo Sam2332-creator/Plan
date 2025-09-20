@@ -1,0 +1,27 @@
+<svg viewBox="0 0 24.9863 21.6084" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24.986328" height="21.608398" fill="none" customFrame="#000000">
+	<defs>
+		<clipPath id="clipPath_9">
+			<rect width="14.575342" height="12.604972" x="5.205566" y="4.501953" fill="rgb(255,255,255)" />
+		</clipPath>
+		<clipPath id="clipPath_10">
+			<rect width="14.575342" height="12.604972" x="5.205566" y="4.501953" fill="rgb(255,255,255)" />
+		</clipPath>
+		<clipPath id="clipPath_11">
+			<rect width="14.575342" height="12.604972" x="5.205566" y="4.501953" fill="rgb(255,255,255)" />
+		</clipPath>
+	</defs>
+	<g id="Linkeding">
+		<ellipse id="Ellipse 18" rx="12.493151" ry="10.804261" cx="12.4931507" cy="10.8042612" fill="rgb(255,180,0)" />
+		<g id="Icons-linkedin" customFrame="url(#clipPath_9)">
+			<rect id="Icons-linkedin" width="14.575342" height="12.604972" x="5.205566" y="4.501953" fill="rgb(255,255,255)" fill-opacity="0" />
+			<g id="Icons-linkedin" customFrame="url(#clipPath_10)">
+				<rect id="Icons-linkedin" width="14.575342" height="12.604972" x="5.205566" y="4.501953" fill="rgb(255,255,255)" fill-opacity="0" />
+				<g id="Icons-linkedin" clip-path="url(#clipPath_11)" customFrame="url(#clipPath_11)">
+					<rect id="Icons-linkedin" width="14.575342" height="12.604972" x="5.205566" y="4.501953" fill="rgb(255,255,255)" fill-opacity="0" />
+					<path id="Vector" d="M5.20557 4.50195L19.7809 4.50195L19.7809 17.1069L5.20557 17.1069L5.20557 4.50195Z" fill-rule="nonzero" />
+					<path id="Vector" d="M9.41995 7.12809C9.41979 7.40668 9.29166 7.6738 9.06377 7.87069C8.83587 8.06758 8.52686 8.17812 8.20473 8.17798C7.88259 8.17784 7.57371 8.06704 7.34605 7.86995C7.11837 7.67286 6.99056 7.40562 6.99072 7.12704C6.99088 6.84845 7.11901 6.58133 7.3469 6.38444C7.5748 6.18754 7.88381 6.07701 8.20594 6.07715C8.52808 6.07729 8.83695 6.18809 9.06462 6.38518C9.29229 6.58227 9.42011 6.8495 9.41995 7.12809ZM9.45638 8.95581L7.02716 8.95581L7.02716 15.5314L9.45638 15.5314L9.45638 8.95581ZM13.2946 8.95581L10.8775 8.95581L10.8775 15.5314L13.2703 15.5314L13.2703 12.0808C13.2703 10.1585 16.1671 9.97996 16.1671 12.0808L16.1671 15.5314L18.566 15.5314L18.566 11.3665C18.566 8.12598 14.2784 8.24678 13.2703 9.83816L13.2946 8.95581Z" fill="rgb(43,43,43)" fill-rule="nonzero" />
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>
