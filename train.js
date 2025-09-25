@@ -76,13 +76,13 @@
 
 // Homework task
 
-function test(plan, work) {
-  let math = work.split("");
-  let work1 = math.filter((char) => char === plan);
-  return work1.length;
-}
+// function test(plan, work) {
+//   let math = work.split("");
+//   let work1 = math.filter((char) => char === plan);
+//   return work1.length;
+// }
 
-console.log(test("e", "engineer"));
+// console.log(test("e", "engineer"));
 
 /*
 1) functiondagi "work" parametrini "math"ga tenglab "split" metodi orqali harflarga ajratdim
@@ -90,3 +90,38 @@ console.log(test("e", "engineer"));
 3) "length" metodi bilan "e"larni sanaymiz
 4) console.log da 2ta qavs ishlatamiz.Agar bitta qavs ishlatsak bizga sonni ko'rsatmaydi
 */
+
+// Homework end
+
+// // DEFINE
+// function qoldiqliBolish(a, b, callback) {
+//   if (b === 23) {
+//     callback("Bu notogri", null, false);
+//   } else {
+//     const c = a + b;
+//     callback(null, c);
+//   }
+// }
+
+// // CALL
+// qoldiqliBolish(32, 23, (err, data, data2) => {
+//   if (err) {
+//     console.log("ERROR:", err, data2);
+//   } else {
+//     console.log("data:", data);
+//     console.log("MANTIQLAR...");
+//   }
+// });
+
+// Task B
+
+function task(b) {
+  let count = 0;
+  for (let char of b) {
+    if (!isNaN(char) && char !== "") {
+      count++;
+    }
+  }
+  return count;
+}
+console.log(task("aw7865a2ge76ad"));
