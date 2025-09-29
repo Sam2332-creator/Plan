@@ -8,6 +8,8 @@
 //   `endi dam oling uyogi yaqin qoldi`, //60
 // ];
 
+const moment = require("moment");
+
 // Callback functions
 // function maslahatBering(a, callback) {
 //   if (typeof a !== `number`) callback(`insert a number`, null);
@@ -103,25 +105,43 @@
 //   }
 // }
 
-// // CALL
-// qoldiqliBolish(32, 23, (err, data, data2) => {
-//   if (err) {
-//     console.log("ERROR:", err, data2);
-//   } else {
-//     console.log("data:", data);
-//     console.log("MANTIQLAR...");
-//   }
-// });
-
 // Task B
 
-function task(b) {
-  let count = 0;
-  for (let char of b) {
-    if (!isNaN(char) && char !== "") {
-      count++;
-    }
+// function task(b) {
+//   let count = 0;
+//   for (let char of b) {
+//     if (!isNaN(char) && char !== "") {
+//       count++;
+//     }
+//   }
+//   return count;
+// }
+// console.log(task("aw7865a2ge76ad"));
+
+// Task C
+
+class Shop {
+  constructor(son, son2, son3) {
+    this.son = son;
+    this.son2 = son2;
+    this.son3 = son3;
   }
-  return count;
+  time = moment().format("HH:mm");
+
+  qoldiq() {
+    console.log(
+      `Hozir ${this.time}da ${this.son}ta Non, ${this.son2}ta Cola, ${this.son3}ta Lag'mon mavjud `
+    );
+  }
+  sotish(sotuv) {
+    this.son -= sotuv;
+    this.son2 -= sotuv;
+    this.son3 -= sotuv;
+  }
 }
-console.log(task("aw7865a2ge76ad"));
+
+const myShop = new Shop(4, 5, 2);
+myShop.qoldiq();
+
+myShop.sotish(2, 3, 1);
+myShop.qoldiq();
