@@ -42,10 +42,12 @@ app.post("/create-item", (req, res) => {
 
 app.post("/delete-item", (req, res) => {
   const id = req.body.id;
-  db.collection("plans").deleteOne({ _id: new mongodb.ObjectId(id) }),
+  db.collection("plans").deleteOne(
+    { _id: new mongodb.ObjectId() },
     function (err, data) {
       res.json({ state: "succes" });
-    };
+    }
+  );
 });
 
 app.get("/", function (req, res) {

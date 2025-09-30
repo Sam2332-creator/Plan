@@ -1,7 +1,3 @@
-// const e = require("express");
-
-// const { response } = require("../app");
-
 console.log("FrontEnd JS ishga tushdi!");
 
 function itemTemplate(item) {
