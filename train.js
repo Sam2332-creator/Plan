@@ -120,28 +120,42 @@ const moment = require("moment");
 
 // Task C
 
-class Shop {
-  constructor(son, son2, son3) {
-    this.son = son;
-    this.son2 = son2;
-    this.son3 = son3;
-  }
-  time = moment().format("HH:mm");
+// class Shop {
+//   constructor(son, son2, son3) {
+//     this.son = son;
+//     this.son2 = son2;
+//     this.son3 = son3;
+//   }
+//   time = moment().format("HH:mm");
 
-  qoldiq() {
-    console.log(
-      `Hozir ${this.time}da ${this.son}ta Non, ${this.son2}ta Cola, ${this.son3}ta Lag'mon mavjud `
-    );
+//   qoldiq() {
+//     console.log(
+//       `Hozir ${this.time}da ${this.son}ta Non, ${this.son2}ta Cola, ${this.son3}ta Lag'mon mavjud `
+//     );
+//   }
+//   sotish(sotuv) {
+//     this.son -= sotuv;
+//     this.son2 -= sotuv;
+//     this.son3 -= sotuv;
+//   }
+// }
+
+// const myShop = new Shop(4, 5, 2);
+// myShop.qoldiq();
+
+// myShop.sotish(2, 3, 1);
+// myShop.qoldiq();
+
+// Homework Task D
+
+function task(a, b) {
+  if (a.length !== b.length) {
+    false;
   }
-  sotish(sotuv) {
-    this.son -= sotuv;
-    this.son2 -= sotuv;
-    this.son3 -= sotuv;
-  }
+  let work = a.split("").sort().join("");
+  let work2 = b.split("").sort().join("");
+  return work == work2;
 }
 
-const myShop = new Shop(4, 5, 2);
-myShop.qoldiq();
-
-myShop.sotish(2, 3, 1);
-myShop.qoldiq();
+console.log(task("son", "osn"));
+console.log(task("anna", "dnas"));
