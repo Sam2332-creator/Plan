@@ -148,14 +148,22 @@ const moment = require("moment");
 
 // Homework Task D
 
-function task(a, b) {
-  if (a.length !== b.length) {
-    false;
-  }
-  let work = a.split("").sort().join("");
-  let work2 = b.split("").sort().join("");
-  return work == work2;
+// function task(a, b) {
+//   if (a.length !== b.length) {
+//     false;
+//   }
+//   let work = a.split("").sort().join("");
+//   let work2 = b.split("").sort().join("");
+//   return work == work2;
+// }
+
+// console.log(task("son", "osn"));
+// console.log(task("anna", "dnas"));
+
+// Homework Task E
+
+function taskE(char) {
+  return char.split("").reverse().join("");
 }
 
-console.log(task("son", "osn"));
-console.log(task("anna", "dnas"));
+console.log(taskE("hello"));
