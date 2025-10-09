@@ -162,8 +162,18 @@ const moment = require("moment");
 
 // Homework Task E
 
-function taskE(char) {
-  return char.split("").reverse().join("");
+function taskE(x) {
+  let y = new Set();
+  for (let char of x) {
+    if (y.has(char)) {
+      return true;
+    }
+    y.add(char);
+  }
+  return false;
 }
 
 console.log(taskE("hello"));
+console.log(taskE("olma"));
+
+// Set — bu takrorlanmaydigan qiymatlarni saqlovchi tuzilma
